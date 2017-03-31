@@ -1,4 +1,4 @@
-# dotValidator
+#dotValidator
 
 
 dotValidator is a group of HTML/CSS/JavaScript Inputs with on the fly validation.  You can see a live demo [at this location](https://nathanjplummer.github.io/dotValidator/).
@@ -103,7 +103,7 @@ By default, the validation colors for the dots are:
  	- \#EDBE69
  	
  - Valid Input
- 	- \##31E96B
+ 	- \#31E96B
  	
  These three variables are at the very top of the dotValid.js file.
  
