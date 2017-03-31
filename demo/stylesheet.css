@@ -5,7 +5,7 @@
 /*import Roboto Font*/
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/*Generic classes for all inputs*/
+/*Input Container*/
 .ui-input-container {
     display: flex;
     flex-flow: row nowrap;
@@ -16,6 +16,7 @@
     background-color: #ECEFF3;
 }
 
+/*Descriptions: ex: "Phone Number (US)*/
 .ui-input-description {
     position: absolute;
     top: 1%;
@@ -25,6 +26,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/*Style the input boxes*/
 .ui-input {
     width: 100%;
     background-color: #ECEFF3;
@@ -34,12 +36,13 @@
     padding-top: 2%;
 }
 
+/*Add focus transition for input boxes*/
 .ui-input:focus {
     border: 2px solid #51D0EF;
     transition: .8s ease-in;
 }
 
-
+/*style the validation dot*/
 .validation-dot {
     position: absolute;
     right: 5%;
@@ -51,13 +54,13 @@
     border: 2px solid #212121;
 }
 
-/*Change container values for adult check*/
-
+/*Change container values for Age Box*/
 .ui-input-container-adultcheck {
     width: 80px;
     font-size: 16px;
 }
 
+/*Options for Age Box info span*/
 #dot-valid-age {
     padding-top: 25%;
 }

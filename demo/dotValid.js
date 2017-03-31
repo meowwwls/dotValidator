@@ -7,8 +7,10 @@ var dotInvalid = "#EDBE69";
 var dotValid = "#31E96B";
 
 /*****Internal Validation Library*****/
+//backedn libraries used for validation
 var validator = {};
 
+//EMAIL
 validator.isEmail = (function (input) {
     //Test for valid Email address
     try {
@@ -28,6 +30,7 @@ validator.isEmail = (function (input) {
     return true;
 });
 
+//Phone Numbers
 validator.isPhoneNumber = (function (input) {
     //remove hyphens
     input = input.split("-");
@@ -52,6 +55,7 @@ validator.isPhoneNumber = (function (input) {
     return true;
 });
 
+//check if input is a valid date
 validator.isDate = (function (input) {
     //convert input to string
     input = input.toString();
@@ -97,6 +101,7 @@ validator.withoutSymbols = (function (input) {
     return output;
 });
 
+//check for strong password
 validator.password = (function (input) {
     //convert input to string
     input = input.toString();
@@ -118,6 +123,7 @@ validator.password = (function (input) {
     return true;
 });
 
+//test inout is alphanumeric, used in username validator
 validator.isAlphanumeric = (function (input) {
     //checks if input is alphanumeric only
 
@@ -150,7 +156,6 @@ validator.username = (function (input) {
 });
 
 //validate zipcode
-
 validator.zipcode = (function (input) {
     
     //check input length is not six
@@ -232,9 +237,11 @@ inputCode.number = (function (targ) {
     }
 });
 
+//NOTE: Once date is validated value is sent to the Age Box
+//The Age Box is then validated
 inputCode.date = (function (targ) {
 
-    //send validated result to age input
+    //calculate age based on DOB and then send results to the age box
     function sendAge(DOB) {
         var today = new Date();
         var birthDate = new Date(DOB);
@@ -252,7 +259,7 @@ inputCode.date = (function (targ) {
             ageDisplay.nextElementSibling.style.backgroundColor = dotValid;
         }
     }
-
+    //check if DOB if a valid date
     if (targ.value === "") {
         targ.nextElementSibling.style.backgroundColor = dotInvalid;
     } else if (validator.isDate(targ.value)) {
@@ -293,11 +300,11 @@ inputCode.zipcode = (function (targ) {
     }
 });
 
-
+//select all inputs with dotValidator enabled
 var validotMe = document.querySelectorAll("[data-dotvalid='true']");
 
 
-
+//based on input type load appropriate function
 function validateMe(targ) {
     if (targ.type === "search") {
         inputCode.search(targ);
@@ -319,6 +326,9 @@ function validateMe(targ) {
     
 }
 
+
+//for loop will add event listener to inputs
+//will automatically detect the appropriate event listener
 for (i = 0; i < validotMe.length; i++) {
     if (validotMe[i].type === "date") {
         validotMe[i].addEventListener("blur", function (event) {
