@@ -1,7 +1,7 @@
 # dotValidator
 
 
-dotValidator is a group of HTML/CSS/JavaScript Inputs with on the fly validation.  You can see a live demo [at this location].
+dotValidator is a group of HTML/CSS/JavaScript Inputs with on the fly validation.  You can see a live demo [at this location](https://nathanjplummer.github.io/dotValidator/).
 
 ##User validation requirements
 
@@ -119,4 +119,4 @@ By default, the validation colors for the dots are:
  
 ## ToDo:
 
-- Create a "Vanilla" version without the prestyling.
+- Create a "Vanilla" version without the pre-styling.
