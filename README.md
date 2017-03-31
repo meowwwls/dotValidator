@@ -97,13 +97,13 @@ For the age pseudo-input, the size is controlled by id "dot-valid-age".
 By default, the validation colors for the dots are:
 
 - No User Input
-	- \#F2617A
+	- F2617A
  
  - Invalid Input
- 	- \#EDBE69
+ 	- DBE69
  	
  - Valid Input
- 	- \#31E96B
+ 	- 31E96B
  	
  These three variables are at the very top of the dotValid.js file.
  
@@ -117,6 +117,6 @@ By default, the validation colors for the dots are:
  
  If you change that, and you want the default color to be equal to the no input color, you'll have to change that value in CSS as well.
  
-## ToDo:
+##ToDo:
 
 - Create a "Vanilla" version without the pre-styling.
