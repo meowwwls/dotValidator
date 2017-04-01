@@ -289,6 +289,8 @@ inputCode.zipcode = (function (targ) {
 
 //select all inputs with dotValidator enabled
 var validotMe = document.querySelectorAll("[data-dotvalid='true']");
+//provides check validotMe is present.  If not, skip script.
+var len = validotMe && validotMe.length || false;
 
 
 //based on input type load appropriate function
@@ -316,14 +318,18 @@ function validateMe(targ) {
 
 //for loop will add event listener to inputs
 //will automatically detect the appropriate event listener
-for (i = 0; i < validotMe.length; i++) {
-    if (validotMe[i].type === "date") {
-        validotMe[i].addEventListener("blur", function (event) {
-            validateMe(this);
-        });
-    } else {
-        validotMe[i].addEventListener("input", function (event) {
-            validateMe(this);
-        });
+//len checks that validotMe is present
+//if not skip rest of script
+if (len) {
+    for (i = 0; i < validotMe.length; i++) {
+        if (validotMe[i].type === "date") {
+            validotMe[i].addEventListener("blur", function (event) {
+                validateMe(this);
+            });
+        } else {
+            validotMe[i].addEventListener("input", function (event) {
+                validateMe(this);
+            });
+        }
     }
 }
