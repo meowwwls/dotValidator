@@ -7,8 +7,9 @@ var dotNoInput = "#F2617A";
 var dotInvalid = "#EDBE69";
 var dotValid = "#31E96B";
 
-/*****Internal Validation Library*****/
-//backedn libraries used for validation
+/*****START INTERNAL VALIDATION LIBRARY*****/
+//backend libraries used for validation
+
 var validator = {};
 
 //EMAIL
@@ -172,8 +173,10 @@ validator.zipcode = (function (input) {
 
 });
 
+/*****END INTERNAL VALIDATION LIBRARAY*****/
 
-/*****validateMe sub functions- change validation procedure based on input type*****/
+
+/*****validateMe sub functions- validation procedure via content type*****/
 
 var inputCode = {};
 
