@@ -175,7 +175,6 @@ validator.zipcode = (function (input) {
 
 /*****END INTERNAL VALIDATION LIBRARAY*****/
 
-
 /*****validateMe sub functions- validation procedure via content type*****/
 
 var inputCode = {};
