@@ -236,7 +236,7 @@ inputCode.date = (function (targ) {
         if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
             age--;
         }
-        var ageDisplay = document.getElementById("dot-valid-age");
+        var ageDisplay = document.getElementById("evo-c-dotValidator-age-id");
         console.log(age);
         ageDisplay.innerHTML = age;
         if (age < 18) {
@@ -244,7 +244,7 @@ inputCode.date = (function (targ) {
         } else {
             ageDisplay.nextElementSibling.style.backgroundColor = dotValid;
         }
-        ageDisplay.classList.remove("dot-age-inactive");
+        ageDisplay.classList.remove("evo-c-dotValidator-age-inactive");
     }
     //check if DOB if a valid date
     if (targ.value === "") {
@@ -288,7 +288,7 @@ inputCode.zipcode = (function (targ) {
 });
 
 //select all inputs with dotValidator enabled
-var validotMe = document.querySelectorAll("[data-dotvalid='true']");
+var validotMe = document.querySelectorAll("[data-dotValidator='true']");
 //provides check validotMe is present.  If not, skip script.
 var len = validotMe && validotMe.length || false;
 
