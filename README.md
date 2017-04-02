@@ -73,23 +73,23 @@ Copy and paste the code from the html file for any inputs you wish to import.
 
 The inputs have an attribute:
 
-	data-dotvalid="true"
+	data-dotValidator="true"
 	
 Remove attribute or set to false if you don't want a specific input to have the validator.
 
 ### Changing the size of the validator dot
 
-In the stylesheet, find class "validation-dot."
+In the stylesheet, find class "evo-c-validation-dot."
 
 You can change the width and height here.  If you want to keep the dot circular keep both width and height equal.  Be aware you may also have to change the border-radius.
 
 ### Changing the input size
 
-The inputs will adjust the the size of their container.  In most cases, you don't want to modify an input size directly.
+The inputs will adjust to the size of their container.  In most cases, you don't want to modify an input size directly.
 
 Modify the container div, ideally by adding a new class.
 
-If you want to modify the size of all inputs change values of class "ui-input-container."
+If you want to modify the size of all inputs change values of class "evo-c-dotValidator-container".
 
 ### Changing the dot validation colors
 
@@ -110,11 +110,11 @@ By default, the validation colors for the dots are:
  
  *Also be aware:*
  
- The dot color on page load is defined in the CSS class "validation-dot" via the background-color.
+ The dot color on page load is defined in the CSS class "evo-c-validation-dot" via the background-color.
  
- By default it is equal to the "no user input" color.
+By default it is equal to the "no user input" color.
  
- If you change that, and you want the default color to be equal to the no input color, you'll have to change that value in CSS as well.
+If you change that, and you want the default color to be equal to the no input color, you'll have to change that value in CSS as well.
  
 # Using an External Library
  
