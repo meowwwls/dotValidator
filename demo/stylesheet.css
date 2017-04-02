@@ -9,7 +9,7 @@
 
 /*Input Container*/
 
-.ui-input-container {
+.evo-c-dotValidator-container {
     background-color: #ECEFF3;
     display: flex;
     flex-flow: row nowrap;
@@ -67,7 +67,7 @@
 
 /*Change container values for Age Box*/
 
-.ui-input-container-adultcheck {
+.evo-c-dotValidator-container-age {
     font-size: 16px;
     width: 80px;
 }
