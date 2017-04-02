@@ -1,7 +1,6 @@
-* {
+*[class^=”evo-c-dotValidator”] {
     box-sizing: border-box;
 }
-
 
 /*import Roboto Font*/
 
@@ -18,7 +17,6 @@
     position: relative;
     width: 220px;
 }
-
 
 /*Descriptions: ex: "Phone Number (US)*/
 
