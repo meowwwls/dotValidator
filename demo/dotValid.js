@@ -236,7 +236,7 @@ inputCode.date = (function (targ) {
         if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
             age--;
         }
-        var ageDisplay = document.getElementById("evo-c-dotValidator-age-id");
+        var ageDisplay = document.getElementById("eureka-c-dotValidator-age-id");
         console.log(age);
         ageDisplay.innerHTML = age;
         if (age < 18) {
@@ -244,7 +244,7 @@ inputCode.date = (function (targ) {
         } else {
             ageDisplay.nextElementSibling.style.backgroundColor = dotValid;
         }
-        ageDisplay.classList.remove("evo-c-dotValidator-age-inactive");
+        ageDisplay.classList.remove("eureka-c-dotValidator-age-inactive");
     }
     //check if DOB if a valid date
     if (targ.value === "") {
